@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<title>JOYSTICK</title>
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		<!-- Chart.js library -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		
+		<script type="text/javascript" src="script/zad5_js.js"></script> 
+		<link rel="stylesheet" type="text/css" href="style/zad5_css.css">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="titlecontent" style="color:white">
+<h1>  JOYSTICK DATA</h1>
+<br>
+</div>
+<div class="navigatemenu">
+		<img src="fig/Raspberry-Pi-logo.png" style="width:250px;height:200px"/>
+
+<nav class="nav flex-column">
+  <a class="btn btn-secondary" href="zad1.html">RPY</a>
+  <a class="btn btn-secondary" href="zad4.html">ENV</a>
+  <a class="btn btn-secondary" href="zad2.html">LED CONTROL</a>
+  <a class="btn btn-secondary" href="zad6.html">LIST</a>
+  <a class="btn btn-secondary" href="#">JOYSTICK</a>
+  <a class="btn btn-secondary" href="zad3.html">CONFIG</a>
+</nav>
+</div>
+<div class="naglowek">
+</div>
+<br><br>
+
+<div id="datagrabber" class="container border border-secondary rounded datagrabber" style="float:center-left;">		
+			
+			<div class="secondary rounded menuitem"><span>Middle counter: <span id="countermiddle"></span></span></div>	
+			
+				<div class="chartcontainer">
+				<canvas id="chart"></canvas>
+			</div>
+		</div>
+<br>
+<div style="float:right; margin-right:850px">
+	<button id="rfrsh" class="btn btn-secondary">REFRESH DATA</button>
+</div>			
+	
+
+</body>
+
+</html>

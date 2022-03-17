@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<title>LIST</title>
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		<!-- Chart.js library -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		
+		<script type="text/javascript" src="script/zad6_js.js"></script> 
+		<link rel="stylesheet" type="text/css" href="style/zad6_css.css">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="titlecontent" style="color:white">
+<h1>LIST OF ALL VARIABLES</h1>
+<br>
+</div>
+<div class="navigatemenu">
+		<img src="fig/Raspberry-Pi-logo.png" style="width:250px;height:200px"/>
+
+<nav class="nav flex-column">
+  <a class="btn btn-secondary" href="zad1.html">RPY</a>
+  <a class="btn btn-secondary" href="zad4.html">ENV</a>
+  <a class="btn btn-secondary" href="zad2.html">LED CONTROL</a>
+  <a class="btn btn-secondary" href="#">LIST</a>
+  <a class="btn btn-secondary" href="zad5.html">JOYSTICK</a>
+  <a class="btn btn-secondary" href="zad3.html">CONFIG</a>
+</nav>
+</div>
+<div class="naglowek">
+
+</div>
+<br><br>
+<center>
+
+<div style="float:right; margin-right:630px">
+	<button id="refresh" class="btn btn-secondary">REFRESH DATA</button>
+</div>
+<!--
+<ul class="nav">
+
+	<li><button id="refresh" type="button" class="btn btn-secondary" style="margin-right:5px;">Refresh </button> </li>
+</ul>				
+-->				
+<table id="myTable" class="steelBlueCols">
+<thead>
+<tr>
+<th>Lp.</th>
+<th>Name</th>
+<th>Value</th>
+<th>Unit</th>
+<th>Sensor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td id="1.1"> a </td>
+<td id="1.2">cell3_1</td>
+<td id="1.3">cell4_1</td>
+<td id="1.4">cell4_1</td>
+</tr>
+<tr>
+<td>2.</td>
+<td id="2.1"> a</td>
+<td id="2.2">a</td>
+<td id="2.3">a</td>
+<td id="2.4">a</td>
+</tr>
+<tr>
+<td>3.</td>
+<td id="3.1"> a </td>
+<td id="3.2">cell3_1</td>
+<td id="3.3">cell4_1</td>
+<td id="3.4">cell4_1</td>
+</tr>
+<tr>
+<td>4.</td>
+<td id="4.1"> a </td>
+<td id="4.2">cell3_1</td>
+<td id="4.3">cell4_1</td>
+<td id="4.4">cell4_1</td>
+</tr>
+<tr>
+<td>5.</td>
+<td id="5.1"> a </td>
+<td id="5.2">cell3_1</td>
+<td id="5.3">cell4_1</td>
+<td id="5.4">cell4_1</td>
+</tr>
+<tr>
+<td>6.</td>
+<td id="6.1"> a </td>
+<td id="6.2">cell3_1</td>
+<td id="6.3">cell4_1</td>
+<td id="6.4">cell4_1</td>
+</tr>
+<tr>
+<td>7.</td>
+<td id="7.1"> a </td>
+<td id="7.2">cell3_1</td>
+<td id="7.3">cell4_1</td>
+<td id="7.4">cell4_1</td>
+</tr>
+<tr>
+<td>8.</td>
+<td id="8.1"> a </td>
+<td id="8.2">cell3_1</td>
+<td id="8.3">cell4_1</td>
+<td id="8.4">cell4_1</td>
+</tr>
+<tr>
+<td>9.</td>
+<td id="9.1"> a </td>
+<td id="9.2">cell3_1</td>
+<td id="9.3">cell4_1</td>
+<td id="9.4">cell4_1</td>
+</tr>
+<tr>
+<td>10.</td>
+<td id="10.1"> a </td>
+<td id="10.2">cell3_1</td>
+<td id="10.3">cell4_1</td>
+<td id="10.4">cell4_1</td>
+</tr>
+<tr>
+<td>11.</td>
+<td id="11.1"> a </td>
+<td id="11.2">cell3_1</td>
+<td id="11.3">cell4_1</td>
+<td id="11.4">cell4_1</td>
+</tr>
+<tr>
+<td>12.</td>
+<td id="12.1"> a </td>
+<td id="12.2">cell3_1</td>
+<td id="12.3">cell4_1</td>
+<td id="12.4">cell4_1</td>
+</tr>
+<tr>
+<td>13.</td>
+<td id="13.1"> a </td>
+<td id="13.2">cell3_1</td>
+<td id="13.3">cell4_1</td>
+<td id="13.4">cell4_1</td>
+</tr>
+<tr>
+<td>14.</td>
+<td id="14.1"> a </td>
+<td id="14.2">cell3_1</td>
+<td id="14.3">cell4_1</td>
+<td id="14.4">cell4_1</td>
+</tr>
+<tr>
+<td>15.</td>
+<td id="15.1"> a </td>
+<td id="15.2">cell3_1</td>
+<td id="15.3">cell4_1</td>
+<td id="15.4">cell4_1</td>
+</tr>
+<tr>
+<td>16.</td>
+<td id="16.1"> a </td>
+<td id="16.2">cell3_1</td>
+<td id="16.3">cell4_1</td>
+<td id="16.4">cell4_1</td>
+</tr>
+<tr>
+<td>17.</td>
+<td id="17.1"> a </td>
+<td id="17.2">cell3_1</td>
+<td id="17.3">cell4_1</td>
+<td id="17.4">cell4_1</td>
+</tr>
+<tr>
+<td>18.</td>
+<td id="18.1"> a </td>
+<td id="18.2">cell3_1</td>
+<td id="18.3">cell4_1</td>
+<td id="18.4">cell4_1</td>
+</tr>
+<tr>
+<td>19.</td>
+<td id="19.1"> a </td>
+<td id="19.2">cell3_1</td>
+<td id="19.3">cell4_1</td>
+<td id="19.4">cell4_1</td>
+</tr>
+<tr>
+<td>20.</td>
+<td id="20.1"> a</td>
+<td id="20.2">a</td>
+<td id="20.3">a</td>
+<td id="20.4">a</td>
+</tr>
+<tr>
+<td>21.</td>
+<td id="21.1"> a</td>
+<td id="21.2">a</td>
+<td id="21.3">a</td>
+<td id="21.4">a</td>
+</tr>
+<tr>
+<td>22.</td>
+<td id="22.1"> a</td>
+<td id="22.2">a</td>
+<td id="22.3">a</td>
+<td id="22.4">a</td>
+</tr>
+<tr>
+<td>23.</td>
+<td id="23.1"> a</td>
+<td id="23.2">a</td>
+<td id="23.3">a</td>
+<td id="23.4">a</td>
+</tr>
+<tr>
+<td>24.</td>
+<td id="24.1"> a</td>
+<td id="24.2">a</td>
+<td id="24.3">a</td>
+<td id="24.4">a</td>
+</tr>
+<tr>
+<td>25.</td>
+<td id="25.1"> a</td>
+<td id="25.2">a</td>
+<td id="25.3">a</td>
+<td id="25.4">a</td>
+</tr>
+<tr>
+<td>26.</td>
+<td id="26.1"> a</td>
+<td id="26.2">a</td>
+<td id="26.3">a</td>
+<td id="26.4">a</td>
+</tr>
+<tr>
+<td>27.</td>
+<td id="27.1"> a</td>
+<td id="27.2">a</td>
+<td id="27.3">a</td>
+<td id="27.4">a</td>
+</tr>
+<tr>
+<td>28.</td>
+<td id="28.1"> a</td>
+<td id="28.2">a</td>
+<td id="28.3">a</td>
+<td id="28.4">a</td>
+</tr>
+<tr>
+<td>29.</td>
+<td id="29.1"> a</td>
+<td id="29.2">a</td>
+<td id="29.3">a</td>
+<td id="29.4">a</td>
+</tr>
+<tr>
+<td>30.</td>
+<td id="30.1"> a</td>
+<td id="30.2">a</td>
+<td id="30.3">a</td>
+<td id="30.4">a</td>
+</tr>
+<tr>
+<td>31.</td>
+<td id="31.1"> a</td>
+<td id="31.2">a</td>
+<td id="31.3">a</td>
+<td id="31.4">a</td>
+</tr>
+<tr>
+<td>32.</td>
+<td id="32.1"> a</td>
+<td id="32.2">a</td>
+<td id="32.3">a</td>
+<td id="32.4">a</td>
+</tr>
+<tr>
+<td>33.</td>
+<td id="33.1"> a</td>
+<td id="33.2">a</td>
+<td id="33.3">a</td>
+<td id="33.4">a</td>
+</tr>
+<tr>
+<td>34.</td>
+<td id="34.1"> a</td>
+<td id="34.2">a</td>
+<td id="34.3">a</td>
+<td id="34.4">a</td>
+</tr><tr>
+<td>35.</td>
+<td id="35.1"> a</td>
+<td id="35.2">a</td>
+<td id="35.3">a</td>
+<td id="35.4">a</td>
+</tr>
+
+
+</tbody>
+</table>
+
+</body>
+
+</html>
